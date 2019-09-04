@@ -14,7 +14,7 @@ category: Cause-Effect
 
 ### Overview
 
-![Article Mind Map](/assets/images/study_abroad.svg)
+![Article Mind Map](/blog/assets/images/study_abroad.svg)
 
 ### Response
 
@@ -55,7 +55,7 @@ category: Cause-Effect
 
 **_Analysis_**
 
-![argument1 mind map](/assets/images/study_abroad1.svg) 
+![argument1 mind map](/blog/assets/images/study_abroad1.svg) 
 
 *Position/Claim/Stance (cause)*: 
 
@@ -94,7 +94,7 @@ category: Cause-Effect
 
 **_Analysis_**
 
-![argument2 mind map](/assets/images/study_abroad2.svg) 
+![argument2 mind map](/blog/assets/images/study_abroad2.svg) 
 
 *Position/Claim/Stance (cause)*: go abroad to study for one semester
 
@@ -153,7 +153,7 @@ general welfare:
 
     *He experienced a calling to enter the priesthood.*
 
- ![calling usage](/assets/images/calling.png)
+ ![calling usage](/blog/assets/images/calling.png)
 
 
 ### statistics

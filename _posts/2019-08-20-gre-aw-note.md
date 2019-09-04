@@ -50,7 +50,7 @@ categories: GRE writing
 keypoints: Colleges and universities / require / at least one semester / study in a foreign country
 category: Cause-Effect
 
-> ![Tip](/assets/images/tip24.png) **Caue-Effect Type of Essay**
+> ![Tip](/blog/assets/images/tip24.png) **Caue-Effect Type of Essay**
 >
 > **Cause (Claim) => Wanted Effect1, Effect2, ... (Reasons)**
 >
@@ -58,7 +58,7 @@ category: Cause-Effect
 
 ### Overview
 
-![Article Mind Map](/assets/images/study_abroad.svg)
+![Article Mind Map](/blog/assets/images/study_abroad.svg)
 
 ### Response
 
@@ -100,7 +100,7 @@ category: Cause-Effect
 
 **_Analysis_**
 
-![argument1 mind map](/assets/images/study_abroad1.svg) 
+![argument1 mind map](/blog/assets/images/study_abroad1.svg) 
 
 *Position/Claim/Stance (cause)*: go abroad to study for one semester
 
@@ -131,7 +131,7 @@ category: Cause-Effect
 
 **_Analysis_**
 
-![argument2 mind map](/assets/images/study_abroad2.svg) 
+![argument2 mind map](/blog/assets/images/study_abroad2.svg) 
 
 *Position/Claim/Stance (cause)*: go abroad to study for one semester
 
