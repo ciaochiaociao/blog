@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GRE AW Note
+title: GRE AW - Issue Note
 categories: GRE writing
 ---
 
