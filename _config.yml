@@ -25,6 +25,7 @@ github_username:  ciaochiaociao
 # Build settings
 markdown: kramdown
 theme: minima
+#theme: jekyll-text-theme
 plugins:
   - jekyll-feed
 
