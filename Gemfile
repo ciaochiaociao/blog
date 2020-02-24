@@ -8,7 +8,10 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-# gem "jekyll", "~> 3.8.6"
+#gem "jekyll", "~> 3.8.6"
+
+# (chiao) solve the error Error: wrong number of arguments (given 2, expected 1)
+gem "sprockets", "~> 3.7"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.0"
