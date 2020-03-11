@@ -37,6 +37,10 @@ title: Wiki-based Answer Module
  - Answers that can not be answered might be able to be answered by other answer modules. WikiQA for FGC is like *lottery*. Hard to match one. But once matched, it has to be most likely correct
  - This answer module is called for every question. If WikiQA has answers, it returns its answer. Otherwise, just return None/empty answer.
 
+## Requirements
+- Stanford CoreNLP server
+- Wikidata MongoDB server
+
 ## Overview
 
 0. Preprocessing
@@ -54,10 +58,21 @@ title: Wiki-based Answer Module
 	- (rule) Match NE type with Wikidata item type (to do)
 5. Traverse KB
 6. Post-process values
-7. Coordinating with passage
+	- (rule) time, quantity, wikibase-item
+	- (rule) trad2sim
+	- (rule) filter out values of wikibase-item with only one character
+	- (rule) do not filter out values of wikibase-item with only one character when the attribute name is '朝代'
+8. Coordinating with passage
 	- (rule) fuzzy-match/match labels/aliases of wikibase-item with passage
 	- (rule) NE expansion/diminishing
+	- (rule) do not use NE expansion/diminishing when attribute name is '朝代' 
 	- (rule) NE and ANS type match
 	- (rule) '朝代' in qtext and ans_type in ent_ans_map['COUNTRY'] + ent_ans_map['TIME']
-8. Final decision 
+9. Final decision 
   - (rule) answer with longest length
+
+## FGC question types
+```
+# 朝代
+['D001Q01', 'D001Q06', 'D001Q09', 'D254Q01', 'D274Q01', 'D275Q01', 'D275Q01', 'D285Q01', 'D293Q01', 'D302Q01', 'D305Q01', 'D305Q06', 'D305Q08']
+```

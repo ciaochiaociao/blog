@@ -140,6 +140,8 @@ GEM
     jekyll-github-metadata (2.13.0)
       jekyll (>= 3.4, < 5.0)
       octokit (~> 4.0, != 4.4.0)
+    jekyll-jupyter-notebook (0.0.4)
+      jekyll
     jekyll-mentions (1.5.1)
       html-pipeline (~> 2.3)
       jekyll (>= 3.7, < 5.0)
@@ -295,6 +297,7 @@ DEPENDENCIES
   jekyll-assets
   jekyll-compose
   jekyll-feed (~> 0.6)
+  jekyll-jupyter-notebook
   minima (~> 2.0)
   sprockets (~> 3.7)
   tzinfo (~> 1.2)

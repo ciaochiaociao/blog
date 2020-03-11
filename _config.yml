@@ -28,6 +28,7 @@ theme: minima
 #theme: jekyll-text-theme
 plugins:
   - jekyll-feed
+  - jekyll-jupyter-notebook
 
 jekyll_compose:
   auto_open: true

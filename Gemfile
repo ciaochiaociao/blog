@@ -27,6 +27,7 @@ group :jekyll_plugins do
   gem "jekyll-admin"
   gem "jekyll-assets"
   gem "jekyll-compose"
+  gem "jekyll-jupyter-notebook"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
