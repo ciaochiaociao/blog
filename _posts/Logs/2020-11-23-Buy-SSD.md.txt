@@ -1,0 +1,140 @@
+---
+
+title: HFS128G39TND-N210A
+typora-root-url: ..\..
+---
+## Motherboard
+
+- WS: ASUS WS E500 G5_WS690T
+  - Motherboard: WS C246 PRO
+  - CPU: 
+    - 1 x Socket LGA1151
+    - Intel® Pentium™ 處理器
+      Intel® Celeron™ 處理器
+      Intel® Core™ i9/i7/i5/i3 處理器
+      Intel® Xeon® E Processors
+  - Chipset: Intel C246 (South bridge) (Coffee Lake Q3'18 $49 TDP6w)
+  - SSD Double Slots (32Gbps):
+    - 1 x M.2 connector (2242/2260/2280/22110) PCIe mode  (PCIe3.0x4) => support NVMe
+    - 1 x M.2 connector (2280/2260/2242)  (SATA or Intel Optane Memory, PCIe3.0x2)
+  - Current SSD used: HFS128G39TND-N210A  (SK hynix) (MLC)
+    - 128GB SSD M.2-2280 SATA 6Gb/s
+  - Changed SSD: Kingston RBUSNS8180DS3128GJ 128GB
+    - 58.4% Bench
+    - Seq: R472/W359/M298/SusW69
+    - R4k: R37/W52/M14
+    - DQ4k: R209/W136/M95
+
+
+```powershell
+Get-ComputerInfo
+```
+
+```console
+CsModel                                                 : WS E500 G5_WS690T
+...
+```
+
+```powershell
+Get-WmiObject -Class Win32_BaseBoard
+```
+
+```console
+Manufacturer : ASUSTeK COMPUTER INC.
+Model        :
+Name         : Base Board
+SerialNumber : 180937098000036
+SKU          :
+Product      : WS C246 PRO
+```
+
+## SSD Candidates
+
+- products candidates: (11/23/2020)
+	- 三星 970PRO (970 PRO) (MLC) 1TB: NT$10,299 500GB: NT$5,499 (980 pro for PCIe4.0)
+	- 三星 970 EVO PLUS NVMe M.2 SSD (TLC) 1TB: NT$6,199
+- others
+	- intel, WD
+	- 影馳鎧甲戰將M.2 512G 1599元
+- final decision: 970 PRO NVMe M.2 固態硬碟 512GB MZ-V7P512BW  NT$5,499
+
+![img](/assets/images/jdy2U5G.jpg)
+
+![img](/assets/images/I1Tzt5K.jpg)
+
+![img](/assets/images/JTeyU8B.jpg)
+
+
+```powershell
+Get-PhysicalDisk
+```
+
+```console
+Number FriendlyName            SerialNumber      MediaType   CanPool OperationalStatus HealthStatus Usage            Size
+------ ------------            ------------      ---------   ------- ----------------- ------------ -----            ----
+1      HFS128G39TND-N210A      EJ83N41981160363T SSD         False   OK                Healthy      Auto-Select 119.24 GB
+...
+```
+
+## Memory
+
+https://www.asus.com/tw/Commercial-Servers-Workstations/WS-C246-PRO/specifications/
+
+> 總 Slots 數 : 4 (2 通道)
+> 總容量 : 最大至 64GB UDIMM/最大至 64GB UDIMM
+> 記憶體類型 :
+> 雙通道 DDR4 2666/2400 /2133
+> 記憶體大小:
+> 16GB, 8GB
+
+https://www.transcend-info.com/Products/Item.aspx?PN=JM2666HLB-8G (old)
+
+https://uk.transcend-info.com/Products/Item.aspx?PN=TS2666HLB-8G (bought)
+
+
+```powershell
+Get-CimInstance -Class CIM_PhysicalMemory
+Get-WmiObject -Class Win32_PhysicalMemory
+```
+
+```
+BANK 1 ChannelA-DIMM2 InterleavePosition 1: SK Hynix HMA81GU6CJR8N-VK 8G 2666 Clock 1200 Voltage DDR4 (SMBIOSMemoryType 26)
+BANK 3 ChannelB-DIMM2 InterleavePosition 2: Transcend JM2666HLB-8G 2666 Clock 1200 Voltage DDR4
+```
+
+https://docs.microsoft.com/en-us/windows/win32/cimwin32prov/win32-physicalmemory
+
+> SMBIOSMemoryType 26 => DDR4
+> 
+## CPU
+
+```powershell
+Get-WmiObject -class Win32_Processor
+```
+
+```
+Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz
+Intel64 Family 6 Model 158 Stepping 10
+DeviceID          : CPU0
+MaxClockSpeed     : 3192
+SocketDesignation : LGA1151
+```
+
+- Coffee Lake 微架構
+- Lithography14 nm （第二代 14nm 製程工藝（14++））
+- 8th Generation 
+- i7
+- Launch DateQ4'17
+- \# of Cores6
+- \# of Threads12
+- Processor Base Frequency3.20 GHz
+- Max Turbo Frequency4.60 GHz
+- Cache12 MB Intel® Smart Cache
+- Bus Speed8 GT/s
+- Max Memory Size (dependent on memory type)128 GB
+- Memory TypesDDR4-2666
+- Max # of Memory Channels2
+- Max Memory Bandwidth41.6 GB/s
+- ECC Memory Supported ‡No
+- ~$300
+
