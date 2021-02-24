@@ -138,3 +138,16 @@ SocketDesignation : LGA1151
 - ECC Memory Supported ‡No
 - ~$300
 
+## Add Memories (2021/02/20)
+
+Samsung M378A1K43CB2-CTD x 2 (景藤互換Transcend)
+
+```
+BANK 0 ChannelA-DIMM1 InterleavePosition 1: Transcend JM2666HLB-8G 2666 Clock 1200 Voltage DDR4
+BANK 1 ChannelA-DIMM2 InterleavePosition 1: Samsung M378A1K43CB2-CTD 8G 2666 Clock 1200 Voltage DDR4
+BANK 2 ChannelB-DIMM1 InterleavePosition 2: SK Hynix HMA81GU6CJR8N-VK 8G 2666 Clock 1200 Voltage DDR4 (SMBIOSMemoryType 26)
+BANK 3 ChannelB-DIMM2 InterleavePosition 2: Samsung M378A1K43CB2-CTD 8G 2666 Clock 1200 Voltage DDR4
+```
+
+Testing: Memtest86 12 tests 0 errors
+

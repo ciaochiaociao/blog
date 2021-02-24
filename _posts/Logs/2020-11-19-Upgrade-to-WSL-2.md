@@ -115,6 +115,8 @@ ip addr | grep eth0  # in host's powershell
 ifconfig  # in WSL
 
 netsh interface portproxy add v4tov4 listenport=22 listenaddress=0.0.0.0 connectport=22 connectaddress=<address>
+
+netsh interface portproxy show v4tov4
 ```
 
 ####  
