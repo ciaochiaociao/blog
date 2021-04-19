@@ -1,5 +1,5 @@
 ---
-title: Pytorch Machine Learnine Code Structure
+title: Pytorch Machine Learnine Code Structure (Framework)
 ---
 
 |                         | huggingface                                           | flair                                                        | Pytorch                                 |
@@ -81,7 +81,7 @@ for self.epoch in range(self.epoch + 1, max_epochs + 1):
 
 
 
-## Huggingface train loop
+## HuggingFace train loop
 
 ```
 for epoch in train_iterator:
@@ -105,4 +105,10 @@ for epoch in train_iterator:
          	self.lr_scheduler.step()
          	self.evaluate()
 ```
+
+| Tasks                         | Hugging Face v4.5.1                  | AllenNLP |
+| ----------------------------- | ------------------------------------ | -------- |
+| Single-Span Extraction        | `AutoModelForQuestionAnswering`      |          |
+| Sequence Classification       | `AutoModelForSequenceClassification` |          |
+| Token Sequence Classification | `AutoModelForTokenClassification`    |          |
 

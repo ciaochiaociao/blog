@@ -113,6 +113,7 @@ port forwarding from host to virtual network adapter of WSL 2
 ip addr | grep eth0  # in host's powershell
 # or
 ifconfig  # in WSL
+# inet: 172.24.206.209 ...
 
 netsh interface portproxy add v4tov4 listenport=22 listenaddress=0.0.0.0 connectport=22 connectaddress=<address>
 
