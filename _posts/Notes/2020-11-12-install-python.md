@@ -1,9 +1,10 @@
 ---
-title: Linux Package System
+title: Install Python
 ---
 
 ## Install from binary (with `apt`, and `add-apt-repository` from `software-properties-common`)
-```output
+
+```bash
 apt list | grep python3.  # xenial (16.04) comes with python 3.5 at most by default
 
 # The software-properties-common package gives you better control over your package manager by letting you add PPA (Personal Package Archive) repositories.
@@ -23,7 +24,7 @@ apt install python3-pip  # for python<=3.7
 
 ## Install from source
 
-```
+```bash
 # For Compiling a package from source code requires additional software.
 sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev wget
 
@@ -34,7 +35,7 @@ cd <package>
 sudo make install
 ```
 
-```
+```bash
 
 # --- Intall Python from source code as an example ---
 # do the above things
@@ -49,7 +50,7 @@ sudo make install
 
 ## Change the default Python Version by `update-alternatives`
 
-```
+```bash
 # used commands
 sudo update-alternatives --install <link> <name> <path> <priority>  # add a group of alternatives to the system.
 <link> is the symlink pointing to /etc/alternatives/<name>.
@@ -68,6 +69,9 @@ sudo update-alternatives --config  # show alternatives for the <name> group and 
 # ---
 sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9 2
 sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.5 1
+
+# install in user
+sudo update-alternatives --install "/home/cwhsu/.local/bin/dvc" "dvc" "/home/cwhsu/anaconda3/envs/dvc/bin/dvc" 1
 ```
 
 ## Install pip for python>=3.8 on Xenial (16.04 Ubuntu) (not working)
@@ -117,7 +121,7 @@ hash -r  # forget all
 
 ## Update  remembered locations of commands using `hash`
 
-```
+```bash
 hash
 # used to list a hash table of recently executed commands. It is used for views, resets, or manually changes within the bash path hash. It keeps the locations of recently executed programs and shows them whenever we want to see it. It provides a complete pathname of each command name.
 # 
@@ -126,9 +130,7 @@ hash
 -t	Print the remembered location of each command_name. If multiple command_names are given there, precede each location with corresponding command_name
 ```
 
-
-
-```
+```bash
 $ which pip3
 /usr/bin/pip3
 $ pip3  
@@ -140,5 +142,28 @@ $ hash -t pip3
 $ hash -r
 $ type pip3
 pip3 is hashed (/usr/bin/pip3)
+```
+
+```bash
+# install pytorch on windows 10 with Python 3.7
+pip3 install https://download.pytorch.org/whl/cu90/torch-1.1.0-cp37-cp37m-win_amd64.whl
+
+# install python 3.6
+apt update
+apt install software-properties-common python-software-properties
+add-apt-repository ppa:jonathonf/python-3.6
+apt update
+apt install python3.6
+
+## install pip for python 3.6
+wget https://bootstrap.pypa.io/get-pip.py
+python3.6 get-pip.py
+
+## install python-dev for python 3.6
+apt install -y python3.6-dev
+
+# install python 2.7 and pip
+sudo apt install python-minimal
+sudo apt install python-pip
 ```
 

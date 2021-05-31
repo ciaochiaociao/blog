@@ -2,12 +2,22 @@
 title: Basketball
 ---
 
+ref: 
+
+- https://hoopstudent.com/types-of-basketball-screens/
+- https://www.slideshare.net/pinta1jr/horns-set-plays-multiple-variations
+
+
+
 - three-man: baller + 1 screen & 1 receiver or 2 screens
+  
   - Basics
     - Flare screen: off-screen away from baller
     - Hammer screen: strong-side low-post + weak-side corner screen
     - Horn: two screens for baller
-    - Chin Series: on-ball screen + give High Post and go
+    - Chin Series
+      - on-ball screen + give High Post and go
+        - (on-ball) flat screen changes to (off-ball) back screen
     - Split, Blind Pig, Pinch Post from TRIANGLE
     - Spain P&R: screen for the forward as the screener
   - Advanced:
@@ -20,7 +30,7 @@ title: Basketball
       - Give and 1 on-ball screen for 2 (only two men)
       - Give (then keep) and inside-man on-ball screen for 2
       - No give and 2 on-ball screen for 1
-
+  
 - stagger (screen): four-man - 1 baller + 2 off-screens for receiver 
   - defensive tactic - top block: force the receiver
   - Variations:
@@ -30,6 +40,7 @@ title: Basketball
       - good when you have good alley-ooper
     - stagger X (Nick Nurse): X - pitch then P&R 
     - stagger as a bait (Bull)
+  
 - Two-man tactics:
   - screen (P&R or P&P):
     - baller:
@@ -56,6 +67,7 @@ title: Basketball
   - Pitch:
     - Fake Pitch and drive
     - Pitch then P&R
+  
 - Triangle (Low Post + corner + 45 at strong side)
   - To Low Post
     - two off-ballers (Wing with Top OR Wing with Corner) screen/fake-screen then split => **Split**
@@ -66,6 +78,7 @@ title: Basketball
     - Pinch Post: Wing to Top to weak-side moving to High Post (key: Top to High Post)
     - Blind Pig: Wing to weak-side moving to High Post + Top cut (key: Wing to High Post)
       - Blind Pig can also mean **back screen** (because it is from the defender's **blind spot**)
+  
 - Chin Series VS Blind Pig:
   - similar: Give to High Post and Go
   - difference: Cut to Strong Side (Pinch Host) or to Weak Side with off-ball screen (Chin Series)

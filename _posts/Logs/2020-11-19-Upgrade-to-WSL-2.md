@@ -110,7 +110,7 @@ The requested operation could not be completed due to a virtual disk system limi
 port forwarding from host to virtual network adapter of WSL 2
 
 ```powershell
-ip addr | grep eth0  # in host's powershell
+ip addr | grep eth0  # in host's powershell (not working)
 # or
 ifconfig  # in WSL
 # inet: 172.24.206.209 ...
